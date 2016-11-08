@@ -1,0 +1,7 @@
+@for $i from 1 through 7
+  $:nth-child(#{$i})
+    .loaded &
+      .text
+        transition-delay: 500 + (42ms * $i)
+      .border-bottom
+        transition-deplay:550 + (42ms * $i)
